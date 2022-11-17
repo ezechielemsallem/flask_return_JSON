@@ -14,14 +14,12 @@ app.config['SECRET_KEY'] = "random string"
 db = SQLAlchemy(app)
 
 
-from project.core.views  import core
-from project.customers.views import customers
+
 from project.books.views import books
-from project.loans.views import loans
 
 
 
-app.register_blueprint(core)
-app.register_blueprint(customers)
+
+
+
 app.register_blueprint(books)
-app.register_blueprint(loans)

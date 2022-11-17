@@ -1,7 +1,7 @@
 import json
 from flask import render_template, url_for, redirect, Blueprint, request
 from project import db
-from project.customers.models import Customers
+
 from project.books.models import Books
 
 
