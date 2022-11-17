@@ -9,7 +9,7 @@ class Books(db.Model):
     author = db.Column(db.String(50), nullable=False)
     year = db.Column(db.Integer, nullable=False)
     type = db.Column(db.Integer, nullable=False)
-    loans= db.relationship('Loans', backref='books')
+    
 
 
 
